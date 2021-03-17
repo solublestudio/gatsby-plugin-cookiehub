@@ -4,7 +4,7 @@ Add scripts of [Cookiehub](https://www.cookiehub.com/) in your project with supp
 
 ## Install
 
-`yarn add gatsby-plugin-cookiehub` / `npm install gatsby-plugin-cookiehub`
+`yarn add @solublestudio/gatsby-plugin-cookiehub` / `npm install @solublestudio/gatsby-plugin-cookiehub`
 
 ## How to use
 
@@ -14,7 +14,7 @@ Add plugin to `gatsby-config.js`
 plugins: [
     ...otherPlugins
   {
-    resolve: "gatsby-plugin-cookiehub",
+    resolve: "@solublestudio/gatsby-plugin-cookiehub",
     options: {
       cookiehubID: "YOUR_COOKIEHUB_ID",
       // It is default to true only in development environment
