@@ -1,0 +1,7 @@
+{
+  "name": "gatsby-plugin-cookiehub",
+  "version": "1.0.0",
+  "description": "Add scripts of Cookiehub",
+  "main": "index.js",
+  "license": "MIT"
+}
