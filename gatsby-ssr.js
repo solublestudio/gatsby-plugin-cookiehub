@@ -1,8 +1,7 @@
 import React from "react";
 
-const BASE_URL = "https://cookiehub.net";
-
-const API_VERSION = "/c2/";
+const BASE_URL = "https://cookiehub.net/";
+const API_VERSION = "c2/";
 
 export const onRenderBody = (
   { setHeadComponents, setPostBodyComponents },
@@ -19,11 +18,12 @@ export const onRenderBody = (
 
   const setComponents = config.head ? setHeadComponents : setPostBodyComponents;
 
-  const URL_DEV = isDev ? "/dev" : "";
+  const URL_DEV = isDev ? "dev/" : "";
   const URL = `${BASE_URL}${URL_DEV}${API_VERSION}${config.cookiehubID}.js`;
 
   return setComponents([
-    <script key="gatsby-cookiehub-url" src={URL} />,
+    <link key="gatsby-cookiehub-preconnect" rel="preconnect" href={BASE_URL} />,
+    <script key="gatsby-cookiehub-url" async src={URL} />,
     <script
       key="gatsby-cookiehub-script"
       dangerouslySetInnerHTML={{

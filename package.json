@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "Add scripts of Cookiehub",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "postversion": "git push --follow-tags && npm publish"
+  }
 }
