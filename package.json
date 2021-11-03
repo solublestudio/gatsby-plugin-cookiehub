@@ -1,6 +1,6 @@
 {
   "name": "@solublestudio/gatsby-plugin-cookiehub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add scripts of Cookiehub",
   "main": "index.js",
   "license": "MIT",
